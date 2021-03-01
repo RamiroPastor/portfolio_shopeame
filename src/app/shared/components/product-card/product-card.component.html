@@ -1,0 +1,40 @@
+<img
+  class="productCard__img"
+  src="{{ product.image ? product.image : '/assets/images/placeholder.png' }}"
+  alt="{{ product.name ? product.name : '' }}"
+/>
+
+<h4 class="productCard__name">
+  {{ product.name ? product.name : "Título del producto" }}
+</h4>
+
+<strong class="productCard__price">{{
+  product.price ? product.price : 0
+}}</strong>
+
+<p class="productCard__description">
+  {{ product.description ? product.description : "Descripción del producto" }}
+</p>
+
+<p class="productCard__stars">
+  <app-star-rating
+    [rating]="product.stars ? product.stars : 0"
+  ></app-star-rating>
+</p>
+
+<div class="productCard__controls" *ngIf="!hideControls">
+  <button
+    type="button"
+    class="productCard__btn productCard__btn--delete"
+    (click)="buttonDeleteFunction()"
+  >
+    Eliminar
+  </button>
+  <a
+    type="button"
+    class="productCard__btn productCard__btn--edit"
+    [routerLink]="['/management/edit/', product.id]"
+  >
+    Editar
+  </a>
+</div>

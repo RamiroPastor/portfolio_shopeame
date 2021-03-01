@@ -1,0 +1,38 @@
+app-header {
+  width: 100%;
+}
+
+.header__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  background-color: #ffffff;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logoImg {
+  $x: 4rem;
+  height: $x;
+  width: $x;
+  margin-right: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 3.2rem;
+  color: #ffffff;
+  background: linear-gradient(90deg, #2979ff 0%, #4c589e 100%);
+  border-radius: 6px;
+}
+
+.header__logoTxt {
+  font-size: 3.6rem;
+  font-weight: 500;
+  color: #0c2146;
+}

@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Zapatos Vintage",
+      "price": 49.99,
+      "description": "Bellos zapatos antiguos para Hipsters.",
+      "stars": 4.5,
+      "image": "https://i.ibb.co/4j85tBM/shoes.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Máquina de escribir",
+      "price": 109.99,
+      "description": "Bonita máquina de escribir antigua.",
+      "stars": 4.2,
+      "image": "https://i.ibb.co/84zfbz0/maquina.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Lapiceros de colores",
+      "price": 1.99,
+      "description": "Estupendos bolígrafos de colores.",
+      "stars": 1,
+      "image": "https://i.ibb.co/s5m7HKt/lapiceros.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Pantalón",
+      "price": 49.99,
+      "description": "Pantalón de moto para evitar heridas.",
+      "stars": 4,
+      "image": "https://i.ibb.co/6nnVkNY/pantalon.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Cuaderno de colores",
+      "price": 7.25,
+      "description": "Excelente cuaderno para que apuntes tus clases.",
+      "stars": 3.5,
+      "image": "https://i.ibb.co/Jr3FHVd/cuaderno.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Jarabe marca blanca",
+      "price": 12.5,
+      "description": "No cura el COVID, pero está muy rico.",
+      "stars": 1,
+      "image": "https://i.ibb.co/mhgHWnf/jarabe.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Amazon",
+      "price": 0,
+      "description": "¡Chollo! ¡compra un bolígrafo y llévate el 100% de las acciones de Amazon gratis!",
+      "stars": 2.2,
+      "image": "https://images-eu.ssl-images-amazon.com/images/I/31%2BDgxPWXtL.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Bolígrafo BIC Cristal Original Azul",
+      "price": 0.3,
+      "description": "El bolígrafo que tienes que comprar para llevarte Amazon gratis",
+      "stars": 4.95,
+      "image": "https://static.webcartucho.com/catalog/products/959-7-1-1-boli-bic-cristal-mediano-azul.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Wikipedia",
+      "price": 9999.9,
+      "description": "La enciclopedia libre",
+      "stars": 5,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Wikipedia-logo-v2-es.svg/1200px-Wikipedia-logo-v2-es.svg.png"
+    }
+  ]
+}

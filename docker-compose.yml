@@ -1,0 +1,18 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+    image: "shopeame-web"
+    container_name: shopeame-web
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/shopeame
+  back:
+    build:
+      context: ./backend
+    image: "shopeame-back"
+    container_name: shopeame-back
+    ports:
+      - "3000:3000"

@@ -1,0 +1,35 @@
+app-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7.2rem;
+  width: 100%;
+  background-color: #ffc970;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 5.6rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  color: #444444;
+  span {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+  &:hover {
+    color: #00579f;
+  }
+}
+
+.nav__link--active {
+  background: rgba(235, 242, 255, 0.3);
+}

@@ -1,0 +1,19 @@
+<div class="products__header">
+  <h3 class="products__heading">
+    Listado de productos ({{ products.length }})
+  </h3>
+  <input
+    class="products__search"
+    placeholder="Buscador"
+    type="search"
+    [(ngModel)]="searchText"
+  />
+</div>
+
+<div class="products__list">
+  <app-product-card
+    *ngFor="let p of products | filterNames: searchText"
+    [product]="p"
+    [hideControls]="false"
+  ></app-product-card>
+</div>

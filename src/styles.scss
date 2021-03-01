@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  background-color: #cccccc;
+}
+
+.errorMsg {
+  color: red;
+  font-size: 1rem;
+}
+
+.disabledBtn {
+  cursor: not-allowed !important;
+  color: gray !important;
+  background-color: rgba(gray, 0.3) !important;
+  border-color: gray !important;
+}
+
+.noOpacity {
+  opacity: 0 !important;
+}
+
+@import "./app/app.component.scss";
+@import "./app/layout/footer/footer.component.scss";
+@import "./app/layout/header/header.component.scss";
+@import "./app/layout/header/nav/nav.component.scss";
+@import "./app/layout/hero/hero.component.scss";
+
+@import "./app/shared/components/product-card/product-card.component.scss";
+@import "./app/shared/components/star-rating/star-rating.component.scss";
+
+@import "./app/views/home/home.component.scss";
+@import "./app/views/products/products.component.scss";
+@import "./app/views/management/management.component.scss";

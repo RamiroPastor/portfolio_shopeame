@@ -1,0 +1,116 @@
+<h3 class="management__title">Creación/edición de productos</h3>
+
+<div class="management__inner">
+  <form
+    novalidate
+    (ngSubmit)="onSubmit()"
+    [formGroup]="formGroup"
+    class="management__form"
+  >
+    <label>
+      <p>Nombre del producto:</p>
+      <input
+        class="management__input"
+        formControlName="name"
+        type="text"
+        placeholder="Por ej: Tiesto para planta"
+      />
+      <span
+        class="errorMsg"
+        *ngIf="!formGroup.get('name').valid && formGroup.get('name').touched"
+        >El nombre debe tener un mínimo de {{ bounds.minLenName }} caracteres y
+        un máximo de {{ bounds.maxLenName }} caracteres</span
+      >
+    </label>
+
+    <label>
+      <p>Precio:</p>
+      <input
+        class="management__input"
+        formControlName="price"
+        type="number"
+        placeholder="Por ej: 9.50"
+      />
+      <span
+        class="errorMsg"
+        *ngIf="!formGroup.get('price').valid && formGroup.get('price').touched"
+        >El precio debe estar entre {{ bounds.minPrice }}€ y
+        {{ bounds.maxPrice }}€</span
+      >
+    </label>
+
+    <label>
+      <p>Descripción</p>
+      <input
+        class="management__input"
+        formControlName="desc"
+        type="text"
+        placeholder="Por ej: Lo más vendido este mes"
+      />
+      <span
+        class="errorMsg"
+        *ngIf="!formGroup.get('desc').valid && formGroup.get('desc').touched"
+        >La descrición del producto debe tener un mínimo de
+        {{ bounds.minLenDesc }} caracteres y un máximo de
+        {{ bounds.maxLenDesc }} caracteres</span
+      >
+    </label>
+
+    <label>
+      <p>Ruta de la imagen:</p>
+      <input
+        class="management__input"
+        formControlName="image"
+        type="text"
+        placeholder="Por ej: http://blabla.com/img.jpg"
+      />
+      <span
+        class="errorMsg"
+        *ngIf="!formGroup.get('image').valid && formGroup.get('image').touched"
+        >La url de la imagen debe ser válida, y tener un mínimo de
+        {{ bounds.minLenImg }} caracteres y un máximo de
+        {{ bounds.maxLenImg }} caracteres</span
+      >
+    </label>
+
+    <label>
+      <p>Opiniones</p>
+      <input
+        class="management__input"
+        formControlName="stars"
+        type="number"
+        placeholder="Por ej: 4.28"
+      />
+      <span
+        class="errorMsg"
+        *ngIf="!formGroup.get('stars').valid && formGroup.get('stars').touched"
+        >La puntuación debe estar entre {{ bounds.minStars }} y
+        {{ bounds.maxStars }}</span
+      >
+    </label>
+
+    <div class="management__submitWrapper">
+      <span
+        class="management__okMsg"
+        *ngIf="msgOkDisplay"
+        [ngClass]="{ noOpacity: msgOkFade }"
+        >Producto guardado correctamente <i class="fas fa-check"></i
+      ></span>
+      <input
+        class="management__submitBtn"
+        [disabled]="!formGroup.valid"
+        [ngClass]="{ disabledBtn: !formGroup.valid }"
+        type="submit"
+        value="Guardar"
+      />
+    </div>
+  </form>
+
+  <div class="management__preview">
+    <p class="management__previewTitle">Vista previa del producto:</p>
+    <app-product-card
+      [product]="productFormToProduct(formGroup.value)"
+      [hideControls]="true"
+    ></app-product-card>
+  </div>
+</div>
