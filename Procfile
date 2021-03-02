@@ -1,0 +1,1 @@
+web: cd backend && json-server --watch db.json
