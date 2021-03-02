@@ -3,5 +3,7 @@ set -e
 
 cd backend && npm install 
 
-npm build 
+
+
+cd .. && npm run build 
 
