@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "json-server": "^0.16.2"
+  },
+  "engines": {
+    "node": "14.15.1"
   }
 }
