@@ -1,1 +1,0 @@
-web: cd backend && npm install && json-server --watch db.json
