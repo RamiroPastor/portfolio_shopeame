@@ -1,13 +1,14 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import { ​​HttpClient } from '@angular/common/http';
 
+import { environment } from "../../../environments/environment";
 import { Product } from './../models/Product';
 
 // @Injectable({
 //   providedIn: 'root'
 // })
 
-const apiUrl = 'http://localhost:3000/products';
+const apiUrl = environment.API_URL;
 
 @Injectable()
 
